@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chatbot</title>
+	<link rel="icon" href="bot.png" />
+	<link rel="stylesheet" href="style3.0.css" />
+</head>
+
+<body>
+	<div id="container" class="container">
+		<div id="chat" class="chat">
+			<div id="messages" class="messages"></div>
+			<input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+		</div>
+		<img src="bot.png" alt="Robot cartoon" height="500vh">
+	</div>
+</body>
+<script>
+let userDiv = document.createElement("div");
+userDiv.id = "user";
+userDiv.className = "user response";
+userDiv.innerHTML = `<img src="user.png" class="avatar"><span>${input}</span>`;
+messagesContainer.appendChild(userDiv);
+
+let botDiv = document.createElement("div");
+botDiv.id = "bot";
+botDiv.className = "bot response";
+botDiv.innerHTML = `<span>Typing...</span><img src="bot-mini.png" class="avatar">`;
+messagesContainer.appendChild(botDiv);
+</script>
+<script type="text/javascript" src="index.js" ></script>
+<script type="text/javascript" src="constant.js" ></script>
+<script type="text/javascript" src="speech.js" ></script>
+
+</html>
