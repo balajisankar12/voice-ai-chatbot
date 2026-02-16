@@ -102,4 +102,5 @@ const coronavirus = [
 
 // 🔗 Ollama API settings
 const OLLAMA_API_URL = "http://localhost:11434/api/generate";
-const MODEL_NAME = "gpt-oss:20b"; // Change if you're using another model
+const MODEL_NAME = "gpt-oss:20b";
+
